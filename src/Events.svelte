@@ -32,15 +32,22 @@
 	article{
 		background-color: #363636;
 		display: flex;
-		margin: 25px 25px 0 0;
+		margin: 25px 0 0 0;
 		color: white;
-		font-size: 13px;
+		font-size: 14px;
 		position: relative;
-		flex: 0 1 calc(33% - 13px);
+		flex: 0 1 100%;
 	}
 
-	article:nth-child(3n){
-		margin-right: 0;
+
+	@media screen and (min-width: 1130px) {
+		article{
+			margin:  25px 25px 0 0;
+			flex: 0 1 calc(33% - 13px);
+		}
+		article:nth-child(3n){
+			margin-right: 0;
+		}
 	}
 	/*
 	article i{
@@ -79,7 +86,7 @@
 	}
 	article content{
 		margin: 12px 15px;
-		font-size: 13px;
+		font-size: 14px;
 	}
 	article p{
 		margin: 2px 0 8px;

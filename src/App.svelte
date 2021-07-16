@@ -69,7 +69,7 @@
 		color: white;
 		border-bottom: 5px solid #363636;
 		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 17px;
 		margin: 0;
 		padding: 0 0 9px;
 
