@@ -1,0 +1,83 @@
+[
+  {
+    "date": "16/11/2016",
+    "text": "El entonces gobernador de Coahuila, Rubén Moreira Valdez y el alcalde Miguel Ángel Riquelme Solís arrancaron las obras de la ruta troncal, entre protestas de los concesionarios del transporte público que se dijeron excluidos de un proyecto que los afecta.",
+    "latitude": 25.5345,
+    "longitude": -103.4027222,
+    "letter": "A",
+    "color": "FF4840",
+    "offset": ""
+  },
+  {
+    "date": "7/2/2017",
+    "text": "Comerciantes establecidos sobre la carretera Torreón-Matamoros se manifestaron para reclamar que las obras de la ruta troncal del Metrobús afectan sus ganancias y piden a la autoridad darle celeridad a los trabajos.",
+    "latitude": 25.53533333,
+    "longitude": -103.3961389,
+    "letter": "B",
+    "color": "B7D058",
+    "offset": ""
+  },
+  {
+    "date": "6/3/2017",
+    "text": "Ciudadanos clausuraron las obras de demolición de la Plaza Cívica del Torreón, la cual daría paso a la construcción de la Terminal Nazas. La acción fue porque argumentaron que retirar el monumento a la entrada de la ciudad era un ataque a la historia regional.",
+    "latitude": 25.54468944,
+    "longitude": -103.4682593,
+    "letter": "C",
+    "color": "3881C5",
+    "offset": -40
+  },
+  {
+    "date": "10/10/2017",
+    "text": "Tras las fuertes lluvias registradas, las obras de la Terminal Nazas quedaron bajo el agua y el hecho abrió cuestionamientos en torno a la resistencia de la obra por ubicarse en donde hace años corría el río Nazas.",
+    "latitude": 25.54468944,
+    "longitude": -103.4682593,
+    "letter": "D",
+    "color": "E33976",
+    "offset": ""
+  },
+  {
+    "date": "3/4/2018",
+    "text": "Una mujer murió cuando el conductor de una máquina de trascabo la golpeó en las obras de la ruta troncal sobre el bulevar Revolución.",
+    "latitude": 25.53570375,
+    "longitude": -103.4311471,
+    "letter": "E",
+    "color": "6CBB6D",
+    "offset": ""
+  },
+  {
+    "date": "15/6/2018",
+    "text": "Comerciantes del sector alianza se manifiestan para reclamar que las obras de la ruta troncal afectan sus ganancias.",
+    "latitude": 25.53562901,
+    "longitude": -103.4656415,
+    "letter": "F",
+    "color": "00A3D8",
+    "offset": ""
+  },
+  {
+    "date": "3/10/2018",
+    "text": "Uno de los muros del desnivel complementario que era construido como parte de las obras del Metrobús colapsa.",
+    "latitude": 25.53507709,
+    "longitude": -103.3768262,
+    "letter": "G",
+    "color": "AD4995",
+    "offset": ""
+  },
+  {
+    "date": "28/5/2019",
+    "text": "La estructura de un paradero del Metrobús Laguna sobre el bulevar Revolución y calle 33 colapsó y dejó dos trabajadores lesionados.",
+    "latitude": 25.53559704,
+    "longitude": -103.4114817,
+    "letter": "H",
+    "color": "26A17F",
+    "offset": ""
+  },
+  {
+    "date": "19/1/2021",
+    "text": "Habitantes de la colonia El Arenal protestaron en uno de los accesos de la ciudad de Torreón para exigir la reparación de sus viviendas que han sido afectadas por las obras de la Terminal Nazas y que hasta ese día estaban abandonadas.",
+    "latitude": 25.54468944,
+    "longitude": -103.4682593,
+    "letter": "I",
+    "color": "00C1CE",
+    "offset": 40
+  }
+]
