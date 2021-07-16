@@ -36,9 +36,18 @@
 		padding: 8px 15px;
 		border:  3px solid #787878;
 		border-radius: 5px;
-		margin: 25px 25px 0 0;
-		flex: 0 1 calc(33% - 49px);
+		margin: 25px 0 0 0;
+		flex: 0 1 100%;
 		position: relative;
+	}
+	@media screen and (min-width: 1130px) {
+		article{
+			margin:  25px 25px 0 0;
+			flex: 0 1 calc(33% - 49px);
+		}
+		article:nth-child(3n){
+			margin-right: 0;
+		}
 	}
 	article a{
 		display: block;
@@ -56,9 +65,6 @@
 		background-color: white;
 		transition: all 300ms ease;
 		border: 3px solid #878787;
-	}
-	article:nth-child(3n){
-		margin-right: 0;
 	}
 	article nav{
 		padding: 5px 7px 0 5px;
