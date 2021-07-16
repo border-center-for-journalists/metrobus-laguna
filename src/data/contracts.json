@@ -10,7 +10,8 @@
     "latStart": 25.53527778,
     "lngStart": -103.3841389,
     "latEnd": 25.54468944,
-    "lngEnd": -103.4682593
+    "lngEnd": -103.4682593,
+    "filename": "001-FONADIN-BRT-TOR16.pdf"
   },
   {
     "key": "008-FMETROTOR-16",
@@ -23,7 +24,8 @@
     "latStart": 25.54468944,
     "lngStart": -103.4682593,
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": "008FMETROTOR16.pdf"
   },
   {
     "key": "CE-E218-2006",
@@ -36,7 +38,8 @@
     "latStart": "",
     "lngStart": "",
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": "CE-905002984-E218-2016.pdf"
   },
   {
     "key": "004-FMETROTOR/16",
@@ -49,7 +52,8 @@
     "latStart": 25.52969444,
     "lngStart": -103.2258333,
     "latEnd": 25.53480556,
-    "lngEnd": -103.3001111
+    "lngEnd": -103.3001111,
+    "filename": "004FMETROTOR16.pdf"
   },
   {
     "key": "005-F-METRO-TOR-16\nCONV. 1",
@@ -62,7 +66,8 @@
     "latStart": 25.53480556,
     "lngStart": -103.3001111,
     "latEnd": 25.53527778,
-    "lngEnd": -103.3841389
+    "lngEnd": -103.3841389,
+    "filename": "005FMETROTOR16.pdf"
   },
   {
     "key": "SIDUM-201813-0-0",
@@ -75,7 +80,8 @@
     "latStart": 25.53825,
     "lngStart": -103.2375278,
     "latEnd": 25.53530556,
-    "lngEnd": -103.2521389
+    "lngEnd": -103.2521389,
+    "filename": "CONTRATO SIDUM-2018013-0-0.pdf"
   },
   {
     "key": "SIDUM-2019151-0-0",
@@ -88,7 +94,8 @@
     "latStart": 25.53766667,
     "lngStart": -103.3758056,
     "latEnd": 25.53033333,
-    "lngEnd": -103.3706667
+    "lngEnd": -103.3706667,
+    "filename": "CONTRATO SIDUM-2019151-0-0.pdf"
   },
   {
     "key": "SIDUM-2018013-0-1",
@@ -101,7 +108,8 @@
     "latStart": "",
     "lngStart": "",
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": ""
   },
   {
     "key": "SIT-E-18001-0-0",
@@ -114,7 +122,8 @@
     "latStart": "",
     "lngStart": "",
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": "CONTRATO SIT-E-18001-0-0.pdf"
   },
   {
     "key": "SIT-E-18001-0-1",
@@ -127,7 +136,8 @@
     "latStart": "",
     "lngStart": "",
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": ""
   },
   {
     "key": "SIT-E-18001-0-2",
@@ -140,6 +150,7 @@
     "latStart": "",
     "lngStart": "",
     "latEnd": "",
-    "lngEnd": ""
+    "lngEnd": "",
+    "filename": ""
   }
 ]
