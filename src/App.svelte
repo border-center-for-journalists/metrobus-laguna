@@ -9,10 +9,11 @@
 </script>
 
 <main>
-	<h1>Metrobús Laguna</h1>
-	<h2>la ruta de la corrupción</h2>
-	<h3>Lorem ipsum dolor sit amet</h3>
+	
 	<div class='container'>
+		<h1>La inacabable ruta del </h1>
+		<h2>Metrobús Laguna </h2>
+		<h3>Las obras de un proyecto pensado para mejorar la movilidad de una región están por cumplir cinco años sin que exista una fecha para poner a funcionar el sistema</h3>
 		<LeafletMap events={events.default} contracts={contracts.default} />
 
 		<nav>
@@ -52,8 +53,9 @@
 		font-size: 15px;
 		color: #A3A3A3;
 		text-transform: uppercase;
-		margin: 0;
+		margin: 0 0 20px;
 		letter-spacing: 2.3px;
+		line-height: 25px;
 	}
 	.container{
 		max-width: 1150px;

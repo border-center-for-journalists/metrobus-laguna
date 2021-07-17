@@ -8,7 +8,7 @@
 	{#each contracts as contract}
 		<article class:downloadable={contract.filename}>
 			{#if contract.filename}
-				<a href='contracts/{contract.filename}' target='_blank' class='article downloadable'></a>
+				<a href='contracts/{contract.filename}' target='_blank' class='article downloadable'> </a>
 			{/if}
 			<nav>
 				{#if contract.filename}
@@ -17,6 +17,7 @@
 			</nav>
 			<content>
 				<p class='company'>{contract.company}</p>
+				<p class='title'>{contract.key}</p>
 				<p class='title'>{contract.concept}</p>
 				<p class='ammount'>{contract.ammount}</p>
 			</content>

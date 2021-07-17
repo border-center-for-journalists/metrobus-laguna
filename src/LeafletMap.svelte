@@ -2,8 +2,8 @@
   import L from 'leaflet';
   import { onMount, afterUpdate } from 'svelte';
 
-  export let events;
-  export let contracts;
+  export let events;/*
+  export let contracts;*/
 
   let mapContainer;
   let leafletMap;
