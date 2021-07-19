@@ -7,9 +7,7 @@
 		<i style="border-right:10px solid #{event.color}"></i>
 		<nav style="background-color: #{event.color}">{event.letter}</nav>
 		<content>
-			{#if event.letter !== 'B'}
-				<img src='photos/{event.letter}.jpeg' alt='{event.text}' />
-			{/if}
+			<img src='photos/{event.letter}.jpeg' alt='{event.text}' />
 			<div class='date'>{event.date}</div>
 			<p>{event.text}</p>
 			{#if event.imageSource}
