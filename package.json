@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "@rollup/plugin-json": "^4.1.0",
+    "@sveltejs/svelte-scroller": "^2.0.7",
     "leaflet": "^1.7.1",
+    "leaflet.markercluster": "^1.5.1",
     "sirv-cli": "^1.0.0"
   }
 }

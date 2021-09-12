@@ -1,15 +1,17 @@
 <script>
   import L from 'leaflet';
   import { onMount, afterUpdate } from 'svelte';
-
   export let events;
-  export let contracts;
+  export let year;
+  export let all;
 
   let mapContainer;
   let leafletMap;
+  let yearLayers = [];
+  let layerGroups = [];
 
-  const corner1 = L.latLng(25.549204282807214, -103.47397135208219);
-  const corner2 = L.latLng(25.521026126702395, -103.36243547676693);
+  const corner1 = L.latLng(28.865583069965584, -104.0892633488044);
+  const corner2 = L.latLng(26.609405211367722, -100.21897745762217);
   const bounds = L.latLngBounds(corner1, corner2);
 
   onMount(async () => {
@@ -23,12 +25,12 @@
       accessToken: 'pk.eyJ1IjoiZWxzb25ueSIsImEiOiJjazkwYWQ2d28wMDJ4M25vNjR3b2h5bWpiIn0.iQk1NtwS-2bJafmWg5Ol9w',
     });
 
-    const eventMarkers = events.map(e =>{
+    events.forEach(e => {
       let offset = e.offset ? 'margin-left: '+e.offset+'px' : '';
       let icon = L.divIcon({
         className: 'custom-div-icon',
-        html: "<div style='background-color:#"+e.color+";' class='event-marker'>"+e.letter+"</div>",
-        iconSize: [40, 40],
+        html: "<div class='event-marker'></div>",
+        iconSize: [10, 10],
         iconAnchor: [e.offset || 0, 0]
       });
       let tooltip = {
@@ -38,31 +40,41 @@
         permanent: false,
         offset: [-e.offset || 0, 0]
       }
-      return L.marker([e.latitude, e.longitude],{icon:icon}).bindTooltip('<p class="date">'+e.date+'</p>'+e.text,tooltip);
+      let marker = L.marker([e.lat, e.long],{icon:icon}).bindTooltip('<p class="date">'+e.year+'</p>'+e.company,tooltip);
+      let yearIndex = e.year - 2006;
+      if(yearLayers[yearIndex]){
+        yearLayers[yearIndex].push(marker);
+      }else{
+        yearLayers[yearIndex] = [marker];
+      }
     });
-
-    const contractMarkers = contracts.map(c => {
-      let icon = L.divIcon({
-        className: 'contract-marker',
-        html: "<div class='ammount'>"+c.ammount+"</div><div class='code'>"+c.key+"</div>",
-        /*iconSize: [40, 40],*/
-      });
-      return L.marker([c.latStart,c.lngStart],{icon:icon});
-      /*let start = [c.latStart,c.lngStart];
-      let end = [c.latEnd,c.lngEnd]
-      L.polyline([start,end], {color: 'white'}).addTo(leafletMap);*/
-    });
+   layerGroups = yearLayers.map(year => L.layerGroup(year));
 
     leafletMap = L.map(mapContainer, { 
       scrollWheelZoom: false,
       attributionControl: false,
       zoomControl : false,
-      layers : [tiles,L.layerGroup(eventMarkers)]
+      layers : [tiles,...layerGroups]
     }).fitBounds(bounds);
 
     resize();
-    // console.log(municipalities, counties)
+
+
   });
+    const addLayers = (index,layerGroups) => {
+      if(leafletMap){
+        layerGroups.forEach(layerGroup => {
+          layerGroup.remove();
+        });
+        if(year >= 0){
+          leafletMap.addLayer(layerGroups[index]);
+        }else{
+          layerGroups.forEach(g => leafletMap.addLayer(g));
+        }
+      }
+    }
+
+    $: addLayers(year-2006,layerGroups);
   
   const resize = () => {
     leafletMap.invalidateSize().fitBounds(bounds);
@@ -74,7 +86,7 @@
 
 <style>
   .map {
-    height:350px;
+    height:calc(100vh - 150px);
     width: 100%;
   }
 
